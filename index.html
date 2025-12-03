@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>P2 Sem-2 Portal</title>
+
+<style>
+
+    body {
+        margin: 0;
+        font-family: "Poppins", Arial, sans-serif;
+        background: #e8eef5;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    /* Scrolling bar */
+    .scroll-box {
+        background: #003B73;
+        padding: 25px;
+        color: #fff;
+        overflow: hidden;
+        position: relative;
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    .scroll-text {
+        white-space: nowrap;
+        position: absolute;
+        right: -100%;
+        animation: scroll 10s linear infinite;
+    }
+
+    @keyframes scroll {
+        from { right: -100%; }
+        to { right: 100%; }
+    }
+
+    /* Buttons container */
+    .container {
+        max-width: 280px;
+        margin: 30px auto;
+        text-align: center;
+        flex: 1;
+    }
+
+    /* Buttons with more gap */
+    .btn {
+        display: block;
+        width: 100%;
+        padding: 12px;
+        margin: 20px 0; /* Increased gap */
+        font-size: 17px;
+        font-weight: 600;
+        color: white;
+        text-decoration: none;
+        border-radius: 20px;
+        background: linear-gradient(135deg, #0052b5, #0077ff);
+        transition: 0.25s;
+    }
+
+    .btn:hover {
+        transform: scale(1.04);
+    }
+
+    /* Footer */
+    footer {
+        background: black;
+        color: white;
+        text-align: center;
+        padding: 25px;
+        font-size: 17px;
+        margin-top: 20px;
+    }
+
+</style>
+
+</head>
+<body>
+
+    <!-- Scrolling Text -->
+    <div class="scroll-box">
+        <div class="scroll-text">✨ Welcome to P2 Sem-2 Portal | Notes | Previous Papers ✨</div>
+    </div>
+
+    <!-- Button Section -->
+    <div class="container">
+        <a class="btn" href="imptopics.html">📘 Important Topics</a>
+        <a class="btn" href="content.html">📚 Content</a>
+        <a class="btn" href="mid.html">📝 Previous Year Mid Papers</a>
+        <a class="btn" href="#">📄 Previous Year Sem Papers</a><br>
+        
+          <!-- WhatsApp Button (Placed Below Other Buttons) -->
+    <a class="btn" href="https://wa.me/919346729907" target="_blank" style="background:#25D366;">
+        💬 Contact on WhatsApp
+    </a>
+    
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        Developed by Thushanth | 2024 Batch | RGUKT
+    </footer>
+
+</body>
+</html>
