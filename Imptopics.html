@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Important Topics - P2 Sem2</title>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: "Poppins", Arial, sans-serif;
+        background: #e8f9ff;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    /* Heading */
+    h1 {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 28px;
+        color: #004b5c;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    /* Container */
+    .container {
+        width: 95%;
+        max-width: 500px;
+        margin: auto;
+        margin-top: 25px;
+    }
+
+    /* Buttons */
+    .btn {
+        width: 100%;
+        background: #00e0ff;
+        border: 2px solid black;
+        color: black;
+        padding: 15px;               /* Bigger for mobile */
+        border-radius: 15px;
+        text-align: center;
+        margin-bottom: 12px;         /* More gap */
+        cursor: pointer;
+        font-size: 19px;             /* Slightly bigger text */
+        font-weight: 600;
+        transition: 0.2s;
+        user-select: none;
+        box-shadow: 0px 3px 8px rgba(0,0,0,0.15);
+    }
+
+    .btn:hover {
+        background: #00c0d6;
+        transform: scale(1.03);
+    }
+
+    /* Content Box */
+    .content-box {
+        display: none;
+        background: white;
+        padding: 15px;
+        border-radius: 10px;
+        border: 1px solid #00d7ff;
+        margin-bottom: 15px;
+        box-shadow: 0px 4px 12px rgba(0,0,0,0.10);
+        animation: fadeIn 0.3s;
+        line-height: 1.6;
+        font-size: 16px;            /* Better mobile size */
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(5px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    footer {
+        margin-top: 40px;
+        background: black;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+        font-size: 15px;
+    }
+</style>
+
+<script>
+    function toggleBox(id) {
+        // hide all content boxes
+        let boxes = document.getElementsByClassName("content-box");
+        for (let b of boxes) {
+            b.style.display = "none";
+        }
+
+        // show the selected one
+        document.getElementById(id).style.display = "block";
+
+        // scroll to opened content
+        document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+    }
+</script>
+
+</head>
+
+<body>
+
+<h1>Important Topics</h1>
+
+<div class="container">
+
+    <!-- MATHS -->
+    <div class="btn" onclick="toggleBox('maths')">MATHS</div>
+    <div class="content-box" id="maths">
+      <h2>PUC2 SEM2 MATHS IMP TOPICS:</h2>
+ 
+UNIT-1:<br><br>
+
+Module 1 : P3, Method of separating a fraction, Exercise lo 7th (b)<br>
+Module 2 : IP2<br>
+Module 3 : IP4, Exercise lo 4th(b)<br>
+Module 4 : IP3<br>
+Module 5 : IP4<br>
+Module 6 : IP1(b),P2,IP2,IP4,Example-1<br>
+Module 7 : P6,P8,Exercise lo 8th,12th problems.<br><br>
+
+
+UNIT-2:<br><br>
+ 
+Module 1 : P4, Exercise lo 3rd problem<br>
+Module 2 : Example-2, Exercise lo 4th problem<br>
+Module 3 : IP4<br>
+Module 4 : P4<br>
+Module 5 : IP3, Exercise lo 2(f)<br>
+Module 6 : IP2,Example-2.<br>
+1.Define definition of ellipse.<br>
+2.Prove that standard form of the ellipse.<br><br>
+
+ UNIT-3:<br><br>
+
+Module 1 : IP2<br>
+Module 2 : IP3,IP4<br>
+Module 3 : IP2,P4,IP1<br>
+Module 4 : IP3,P3,IP4,Example-1, exercise lo 2nd sum<br>
+Module 5 : IP2,P1,P2,P4<br>
+Module 6 : IP2,IP4,P2<br>
+Module 7 : Exercise 3(a)<br>
+Module 9 : P3,Example-1, Exercise lo (C)<br>
+Module 10: IP3,P2, Example-1, Exercise lo 2nd problem.<br><br>
+
+
+ UNIT-4:<br><br>
+
+Module 2 : P4, Example-9<br>
+Module 3 : P3,lemma problem <br>
+Module 4 : IP3,P4<br>
+Module 5 : IP3,IP4,P2, Exercise lo 9th problem<br>
+Module 6 : Example-5<br>
+Module 7 : Exercise lo (VI) sum,example-5<br>
+Module 8 : P2,IP4,Example-4,Example-8, Exercise lo 3rd(4).<br><br>
+
+
+UNIT-5:<br><br>
+
+Module 1 : IP4,IP3<br>
+Module 2 : IP3,IP4,IP2<br>
+Module 3 : IP4,IP1<br>
+Module 4 : P2,IP2,IP4, Exercise lo 6th sum<br>
+Module 5 : IP1,IP4, Exercise lo 9th sum<br>
+Module 6 : P2,IP2,IP3,IP4,Exercise lo 3rd sum.<br><br>
+
+
+UNIT-6:<br><br>
+
+Module 1  : IP3,IP4<br>
+Module 2  : IP1<br>
+Module 3  : IP3,P4,IP4<br>
+Module 4  : Exercise lo 1st sum<br>
+Module 5 : IP4,IP3<br>
+Module 6  : IP2,P3,IP3<br>
+Module 7  : IP3,P3,P2,IP4<br>
+Module 8  : IP2,P3,P2,IP3<br>
+Module 9  : P3<br>
+Module10 : IP3,P3,P2,
+Excercise lo 5th sum
+
+    </div>
+
+    <!-- PHYSICS -->
+    <div class="btn" onclick="toggleBox('physics')">PHYSICS</div>
+    <div class="content-box" id="physics">
+        <h2>P2 SEM2 PHYSICS IMP TOPICS:</h2>
+    </div>
+
+    <!-- CHEMISTRY -->
+    <div class="btn" onclick="toggleBox('chem')">CHEMISTRY</div>
+    <div class="content-box" id="chem">
+        <h2>P2 SEM2 CHEMISTRY IMP TOPICS:</h2>
+        
+UNIT-1(Aldehydes and ketones):<br><br>
+
+1.Chemical properties of carbonyle compounds<br>
+2.Preparations of carbonyle compounds<br>
+3.Aldol and Cross aldol condensation<br>
+4.Cannizaro reaction<br><br>
+
+
+
+UNIT-2(Carboxylic acids):<br><br>
+
+1.Preparation methods of carboxylic acids<br>
+2.Esterification with mechanism<br>
+3.Hoffmann bromide degradation <br>
+4.Carbyl amine reaction<br>
+5.Diazotisation<br><br>
+
+
+
+UNIT-3(d-block elements and coordination compounds):<br><br>
+
+1.Werners theory<br>
+2.VBT theory and applications<br>
+3.Nomenclature<br>
+4.Properties of d-block elements<br>
+5.Isomerism<br>
+6.Sidgwick theory (EAN)<br><br>
+
+
+UNIT-4(Surface chemistry):<br><br>
+
+1.Differences between physisorption and chemisorption<br>
+2.Fredlich isotherm<br>
+3.Ligmuir isotherm<br>
+4.Types of colloidal system table<br><br>
+
+
+UNIT-5(Metallurgy):<br><br>
+
+1.Concentration of ores - froath floatation,leaching<br>
+2.Extraction of iron,copper and aluminium from their ores,uses of iron,copper and aluminium
+<br><br>
+
+UNIT-6(Polymers):<br><br>
+
+1.Classification of polymers-structure<br>
+2.Types of polymerization_   addition or chain growth,ionic and free radical mechanism<br>
+3.Natural rubber, vulcanisation of rubber<br>
+4.Molecular mass of polymers<br>
+5.Preparations of Buna-N and Neoprene <br>
+
+
+    </div>
+
+    <!-- ENGLISH -->
+    <div class="btn" onclick="toggleBox('eng')">ENGLISH</div>
+    <div class="content-box" id="eng">
+        <h2>P2 SEM2 ENGLISH IMP TOPICS:</h2>
+    </div>
+
+    <!-- TELUGU -->
+    <div class="btn" onclick="toggleBox('tel')">TELUGU</div>
+    <div class="content-box" id="tel">
+        <h2>P2 SEM2 TELUGU IMP TOPICS:</h2>
+    </div>
+
+    <!-- IT -->
+    <div class="btn" onclick="toggleBox('it')">INFORMATION TECHNOLOGY</div>
+    <div class="content-box" id="it">
+        <h2>P2 SEM2 IT IMP TOPICS:</h2>
+    </div>
+
+</div>
+
+<!-- Footer -->
+<footer>
+    Developed by Thushanth • 2024 Batch RGUKT
+</footer>
+
+</body>
+</html>
