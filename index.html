@@ -198,5 +198,20 @@ function enterSite() {
         Developed by Thushanth | 2024 Batch | RGUKT
     </footer>
 
+<script>
+let deferredPrompt;
+
+window.addEventListener('beforeinstallprompt', (e) => {
+  e.preventDefault();
+  deferredPrompt = e;
+  gtag('event', 'pwa_install_prompt_shown');
+});
+
+window.addEventListener('appinstalled', () => {
+  gtag('event', 'pwa_installed');
+});
+</script>
+
+   
 </body>
 </html>
